@@ -4,12 +4,18 @@ from PyQt5 import QtWidgets, QtGui
 from app import KillSayApp
 from utils import get_base_dir
 
+# 导入资源文件（包含嵌入的图标）
+import resource_rc
+
 def main():
     app = QtWidgets.QApplication(sys.argv)
-    icon_path = os.path.join(get_base_dir(), "icon.ico")
-    app.setWindowIcon(QtGui.QIcon(icon_path))
+    
+    # 使用嵌入的资源图标
+    icon = QtGui.QIcon(":/icon.ico")
+    app.setWindowIcon(icon)
+    
     window = KillSayApp()
-    window.setWindowIcon(QtGui.QIcon(icon_path))
+    window.setWindowIcon(icon)
     window.run()
     sys.exit(app.exec_())
 
