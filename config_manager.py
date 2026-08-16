@@ -21,11 +21,11 @@ class ConfigManager:
             "/PLAY SWRSOLO"
         ],
         "kill_patterns": [
-            "%o被%u击败",
+            "%o跑得很快, 但是他还是摔了一跤, 最终被%u击败了",
             "%o被炸成了粉尘, 幕后黑手是%u!",
             "%o消逝了, 幕后黑手是%u!",
             "%o被%u用弓箭射穿了",
-            "%o跑得很快, 但是他还是摔了一跤, 最终被%u击败了",
+            "%o被%u击败",
             "%u击败了%o"
         ],
         "kill_messages": [
@@ -37,7 +37,13 @@ class ConfigManager:
             "金戈铁马，气吞万里如虎。"
         ],
         "message_prefix": "",
-        "killsay_format": "%t%m"
+        "killsay_format": "%t%m",
+        "chat_key": "t",
+        "win_patterns": [
+            "恭喜! %p 在地图 %m 获胜!",
+            "恭喜! %p 在地图 %m 获胜"
+        ],
+        "autotext": []
     }
     
     def __init__(self, config_dir=None):
