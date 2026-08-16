@@ -602,7 +602,7 @@ class ThemeManager:
                                             stop:1 {btn_dark});
                 color: {c['text_primary']};
                 border: 1px solid rgba(255,255,255,18);
-                padding: 8px 20px;
+                padding: 8px 12px;
                 font-weight: bold;
                 border-radius: 8px;
             }}
